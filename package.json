@@ -1,0 +1,25 @@
+{
+  "name": "@kodex/abi-decoder-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "author": "@kodex/wizardsorb",
+  "homepage": "https://kodexdata.systems",
+  "scripts": {
+    "test": "ts-node src/decoder.test.ts",
+    "compile": "rm -R ./dist && tsc",
+    "prepublish": "tsc"
+  },
+  "dependencies": {
+    "bn.js": "^5.1.3",
+    "web3-eth-abi": "^1.2.1",
+    "web3-utils": "^1.2.1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bn.js": "^4.11.6",
+    "@types/web3-eth-abi": "^1.2.2",
+    "web3-core": "^1.3.0"
+  }
+}
