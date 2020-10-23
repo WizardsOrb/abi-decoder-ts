@@ -7,8 +7,7 @@
   "homepage": "https://kodexdata.systems",
   "scripts": {
     "test": "ts-node src/decoder.test.ts",
-    "compile": "rm -R ./dist && tsc",
-    "prepublish": "tsc"
+    "compile": "rm -R ./dist && tsc"
   },
   "dependencies": {
     "bn.js": "^5.1.3",
