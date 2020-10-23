@@ -1,5 +1,5 @@
 {
-  "name": "@kodex/abi-decoder-ts",
+  "name": "@kodex-data/abi-decoder-ts",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
