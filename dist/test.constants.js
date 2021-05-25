@@ -1,9 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const _1 = __importDefault(require("."));
+exports.tx = exports.logs = exports.Erc721Basic = void 0;
 exports.Erc721Basic = [
     {
         "constant": true,
@@ -339,11 +336,3 @@ exports.tx = {
     "v": "0x249d",
     "value": "0"
 };
-const decoder = new _1.default();
-decoder.addABI(exports.Erc721Basic, "erc721");
-const decodedLog = decoder.decodeLogs(exports.logs);
-const decodedMethod = decoder.decodeMethod(exports.tx.input);
-console.log(JSON.stringify({ decodedLog, decodedMethod }, null, "\t"));
-console.log(decoder.state.abiNames);
-console.log(decoder.getAbiByName("erc721"));
-console.log(decoder.getABIs());

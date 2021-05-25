@@ -272,12 +272,14 @@ export default class AbiDecoderTS {
 
             decodedParams.push(decodedP);
           });
-    
+
+          const logId = logItem.id || `log_${sha3(`${logItem.id}:${logItem.blockHash}:${methodID}`).substring(2, 10)}`
+
           return {
             block: logItem.blockNumber,
             hash: logItem.transactionHash,
-            logIndex: logItem.transactionIndex,
-            logId: logItem.id,
+            logIndex: logItem.logIndex,
+            logId: logId,
             name: method.name,
             params: decodedParams,
             address: logItem.address,
